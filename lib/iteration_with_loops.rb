@@ -5,12 +5,14 @@ def join_nested_strings(src)
   i = 0
   answer = ''
   while src[i] do
-    if src[i].class == Integer
-      src.delete(i)
-    end
+    j = 0 
+    while src[i][j] do
+      if src[i][j].class == String
+        answer = answer + src[i] + ' '
+      end
     i += 1
   end
-  return src.join(' ')
+  return answer
 end
 
 mixed_data = [
@@ -20,4 +22,4 @@ mixed_data = [
 ]
  
 puts join_nested_strings(mixed_data)
-puts "Does this work"
+puts "Does this"
