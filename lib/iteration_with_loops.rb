@@ -8,7 +8,7 @@ def join_nested_strings(src)
     j = 0 
     while src[i][j] do
       if src[i][j].class == String
-        answer = answer + src[i] + ' '
+        answer = answer + src[i][j] + ' '
       end
       j += 1
     end 
