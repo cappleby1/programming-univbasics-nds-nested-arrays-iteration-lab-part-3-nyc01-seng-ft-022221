@@ -20,3 +20,4 @@ mixed_data = [
 ]
  
 puts join_nested_strings(mixed_data)
+puts "Does this work"
