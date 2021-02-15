@@ -10,7 +10,7 @@ def join_nested_strings(src)
     end
     i += 1
   end
-  return src.join
+  return src.join(' ')
 end
 
 mixed_data = [
