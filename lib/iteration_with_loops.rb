@@ -5,12 +5,12 @@ def join_nested_strings(src)
   i = 0
   answer = ''
   while src[i] do
-    if src[i].class == String
-      answer = answer + src[i] + ' '
+    if src[i].class == Integer
+      src.delete(i)
     end
     i += 1
   end
-  return answer
+  return src.join
 end
 
 mixed_data = [
