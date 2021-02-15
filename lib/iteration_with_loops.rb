@@ -10,6 +10,8 @@ def join_nested_strings(src)
       if src[i][j].class == String
         answer = answer + src[i] + ' '
       end
+      j += 1
+    end 
     i += 1
   end
   return answer
