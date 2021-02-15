@@ -6,7 +6,7 @@ def join_nested_strings(src)
   answer = ''
   while src[i] do
     if src[i].class == String
-      answer = answer + src[i]
+      answer = answer + src[i] + ' '
     end
     i += 1
   end
